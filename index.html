@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>NANI?!</title>
+		<title>:-|</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script>
 			document.onkeypress = function(event) {
@@ -11,18 +11,36 @@
 				} else {
 					document.getElementById("face").src = "images/base.jpg";
 				}
-				$("span").text(event.which);
 			}
 		</script>
 	</head>
 	
 	<body>
-		<h1>henlo</h1>
-		<p>i am azir</p>
+		<style>
+			html, body
+			{
+				height: 100%;
+				margin:0;
+				padding:0;
+			}
+
+			div {
+				position:relative;
+				height: 100%;
+				width:100%;
+			}
+
+			div img {
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+				margin:auto;
+			}
+		</style>
+		<div><img id="face" src="images/base.jpg"></div>
 		
-		<img id="face" src="images/base.jpg">
-		
-		<p>Keypress: <span>0</span></p>
 		<script> var validCodes = [69, 73, 79, 82, 83, 84];
 						for (var x = 97; x < 123; x++) {
 							validCodes.push(x);
